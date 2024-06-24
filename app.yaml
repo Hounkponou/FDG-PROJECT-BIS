@@ -1,0 +1,8 @@
+runtime: python39  # Utiliser la version appropriée de Python
+
+handlers:
+- url: /static
+  static_dir: static
+
+- url: /.*
+  script: auto
