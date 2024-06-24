@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Résultat possible du tirage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Résultat possible du tirage</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="{{ url_for('static', filename='img/results.jpg') }}" class="card-img-top" alt="Résultats">
+                    <div class="card-body">
+                        <h5 class="card-title">Recommandations pour le {{ date }}</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><strong>Boule 1:</strong> {{ boule_1 }}</li>
+                            <li class="list-group-item"><strong>Boule 2:</strong> {{ boule_2 }}</li>
+                            <li class="list-group-item"><strong>Boule 3:</strong> {{ boule_3 }}</li>
+                            <li class="list-group-item"><strong>Boule 4:</strong> {{ boule_4 }}</li>
+                            <li class="list-group-item"><strong>Boule 5:</strong> {{ boule_5 }}</li>
+                            <li class="list-group-item"><strong>Étoile 1:</strong> {{ etoile_1 }}</li>
+                            <li class="list-group-item"><strong>Étoile 2:</strong> {{ etoile_2 }}</li>
+                        </ul>
+                        <a href="/" class="btn btn-primary btn-block">Recommencer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
