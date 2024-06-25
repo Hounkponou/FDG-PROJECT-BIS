@@ -2,7 +2,7 @@ def load_data():
     import pandas as pd
     import io
     import os
-    path = 'data/'
+    path = 'data/'#"C:\Users\haefs\OneDrive\Documents\Projet Fdj bis\data"
     file_list = []
     List = []
 
