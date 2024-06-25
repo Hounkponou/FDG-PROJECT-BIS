@@ -61,7 +61,7 @@ def load_data():
     return data
 
 # Example usage in Streamlit
-st.title('Load Data from GitHub')
-data = load_data()
-st.write(data)
+#st.title('Load Data from GitHub')
+#data = load_data()
+#st.write(data)
 
