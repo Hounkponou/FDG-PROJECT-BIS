@@ -36,7 +36,7 @@ def date_input_page():
 def results_page():
     if 'date_input' in st.session_state:
         st.title('Résultat possible du tirage')
-        st.image("static/img/results.jpg", width=500)
+        st.image("static/img/results.jpg", width=500,use_column_width=True, output_format='JPEG')
         date_input = st.session_state.date_input
         date = date_input[:2] + '/' + date_input[2:4] + '/' + date_input[4:8]
         df = load_data()
