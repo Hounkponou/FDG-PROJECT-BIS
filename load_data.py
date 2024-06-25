@@ -2,7 +2,7 @@ def load_data():
     import pandas as pd
     import io
     import os
-    path =data #r"C:\Users\haefs\OneDrive\Documents\Projet FDJ\data"
+    path = "https://github.com/Hounkponou/FDG-PROJECT-BIS.git/data" #r"C:\Users\haefs\OneDrive\Documents\Projet FDJ\data"
     file_list = []
     List = []
 
