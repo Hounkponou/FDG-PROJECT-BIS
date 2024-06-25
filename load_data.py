@@ -1,6 +1,6 @@
 def load_data():
     import pandas as pd
-    d1=pd.read_csv(r' euromillions_2.csv')
+    d1=pd.read_csv(r'euromillions_2.csv')
     d2=pd.read_csv(r'euromillions_201902.csv')
     d3=pd.read_csv(r'euromillions_202002.csv')
     data_list=[d1,d2,d3]
